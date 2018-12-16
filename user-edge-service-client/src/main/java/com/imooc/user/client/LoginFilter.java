@@ -32,7 +32,7 @@ public abstract class LoginFilter implements Filter {
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
-        HttpServletResponse response = (HttpServletResponse) request;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         String token = request.getParameter("token");
         if (StringUtils.isBlank(token)) {
