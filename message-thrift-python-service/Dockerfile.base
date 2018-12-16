@@ -1,4 +1,4 @@
-FROM python:3.6.7-alpine3.7
+FROM hub.mooc.com:8080/micro-service/python:3.6.7-alpine3.7
 MAINTAINER qingbao.ho@gmail.com
 
 RUN pip install thrift
